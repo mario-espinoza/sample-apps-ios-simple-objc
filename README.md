@@ -30,3 +30,7 @@ and the project contains only one *shared scheme*.
 
 The purpose of this is to make it quick and easy to validate and
 to experiment with this repository on Bitrise.
+
+## Example Run with oclint and xcpretty
+
+```xcodebuild -target ios-simple-objc -configuration Debug -scheme ios-simple-objc | tee xcodebuild.log | xcpretty -r json-compilation-database -o compile_commands.json```
