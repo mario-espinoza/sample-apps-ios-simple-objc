@@ -60,6 +60,9 @@
     if (_managedObjectModel != nil) {
         return _managedObjectModel;
     }
+    if (_managedObjectModel != nil) {
+        return _managedObjectModel;
+    }
     NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"ios_simple_objc" withExtension:@"momd"];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _managedObjectModel;
